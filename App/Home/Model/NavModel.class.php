@@ -3,8 +3,10 @@ namespace Home\Model;
 
 use Think\Model;
 
-class NavModel extends Model{
-    public function getTree(){
+class NavModel extends Model
+{
+    public function getTree()
+    {
         //得到所有的节点
         $object = $this->field('id,text,url,iconCls,nid')->select();
 

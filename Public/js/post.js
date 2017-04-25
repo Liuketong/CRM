@@ -1,0 +1,20 @@
+$('#post').datagrid({
+    url : ThinkPHP['MODULE'] + '/Post/getList',
+    columns:[[
+        {
+            field:'id',
+            title:'自动编号',
+            width:100
+        },
+        {
+            field:'name',
+            title:'职位名称',
+            width:100
+        },
+        {
+            field:'create_time',
+            title:'创建时间',
+            width:100
+        }
+    ]]
+});
